@@ -14,4 +14,9 @@ public class HomeController {
     public ResponseEntity<String> home() {
         return ResponseEntity.ok("Welcome to the Home Page!");
     }
+
+    @GetMapping("/workflow")
+    ResponseEntity<String> workflow() {
+        return ResponseEntity.ok("Welcome to the Workflow Page!");
+    }
 }
